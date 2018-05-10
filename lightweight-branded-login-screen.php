@@ -4,8 +4,6 @@ Plugin Name: Lightweight Branded Login Screen
 Plugin URI: https://github.com/Julianoe/lightweight-branded-login-screen
 Description: Add basic text and images to login screen to fit your brand or mood from the Customizer
 Version: 1.0
-Author: Julien Gasbayet
-Author URI: http://julien.gasbayet.fr
 License: GPLv2
 */
 
