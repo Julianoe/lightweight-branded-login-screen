@@ -117,7 +117,7 @@ function lbls_register_customizer( $wp_customize ) {
 			$wp_customize,
 			'lbls_background_opacity_control',
 			array(
-					'label'    => __('Background darkness', 'lightweight_branded_login'),
+					'label'    => __('Background opacity', 'lightweight_branded_login'),
 					'settings' => 'lbls_background_opacity',
 					'section'  => 'lbls_images',
 					'type'		 => 'number',
