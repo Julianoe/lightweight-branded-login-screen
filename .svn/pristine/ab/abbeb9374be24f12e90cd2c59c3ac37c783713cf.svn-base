@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Lightweight Branded Login Screen\n"
+"POT-Creation-Date: 2018-04-05 11:39+0200\n"
+"PO-Revision-Date: 2018-04-05 11:39+0200\n"
+"Last-Translator: \n"
+"Language-Team: Julien Gasbayet\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: branded-login-screen.php\n"
+"X-Poedit-SearchPath-1: inc/customizer.php\n"
+
+#: inc/customizer.php:8
+msgid "Branded Login Screen"
+msgstr ""
+
+#: inc/customizer.php:9
+msgid "Define the images used for the login screen"
+msgstr "Définir les images utilisées pour l'écran d'accueil"
+
+#: inc/customizer.php:16
+msgid "Texts"
+msgstr "Textes"
+
+#: inc/customizer.php:32
+msgid "Title Text"
+msgstr "Texte"
+
+#: inc/customizer.php:50
+msgid "Link"
+msgstr "Lien"
+
+#: inc/customizer.php:62
+msgid "Images"
+msgstr "Images"
+
+#: inc/customizer.php:81
+msgid "Lighweight Branded Login Screen Logo"
+msgstr "Logo Lighweight Branded Login Screen"
+
+#: inc/customizer.php:82
+msgid "Recommended dimensions: 175px X 200px"
+msgstr "Dimensions recommandées : 175px X 200px"
+
+#: inc/customizer.php:100
+msgid "Lighweight Branded Login Screen Background"
+msgstr "Background Lighweight Branded Login Screen"
