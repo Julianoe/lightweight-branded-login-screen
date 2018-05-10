@@ -9,15 +9,6 @@ Author URI: http://julien.gasbayet.fr
 License: GPLv2
 */
 
-/*
-HOW TO USE
-This plugin simply adds a custom panel in the customizer with 4 parameters :
- - to replace the wordpress logo on the login page
- - set a background image coupled with a nice linear-gradient
- - replace the title text
- - replace the logo link
-*/
-
 load_plugin_textdomain( 'lightweight_branded_login', false, basename( dirname( __FILE__ ) ) . '/lang' );
 define('LBLS_PLUGIN_DIR', plugin_dir_path(__FILE__));
 require_once LBLS_PLUGIN_DIR . 'inc/customizer.php';
@@ -46,7 +37,13 @@ function bls_login_branding_theme() { ?>
           color : white !important;
         }
         body{
-          background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4) ), url(<?php echo get_option( 'lbls_background' ); ?>) !important;
+          <?php if ( get_option('lbls_background_opacity')) : ?>
+            <?php $color = get_option('lbls_background_opacity'); ?>
+            background: linear-gradient( rgba(0, 0, 0, <?php echo $color; ?>), rgba(0, 0, 0, <?php echo $color; ?>) ), url(<?php echo get_option( 'lbls_background' ); ?>) !important;
+          <?php else: ?>
+            background: url(<?php echo get_option( 'lbls_background' ); ?>) !important;
+          <?php endif; ?>
+
           background-position: center center !important;
           background-repeat:no-repeat !important;
           background-size: cover !important;
@@ -59,6 +56,9 @@ function bls_login_branding_theme() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'bls_login_branding_theme' );
 
+/**
+ * If title text is set replace the default one
+ */
 if( get_option('lbls_title') ){
   function bls_login_text() {
     $login_text = get_option('lbls_title');
@@ -67,6 +67,9 @@ if( get_option('lbls_title') ){
   add_filter('login_headertitle', 'bls_login_text');
 }
 
+/**
+ * If a link is set replace the default Wordpress one
+ */
 if( get_option('lbls_link') ){
   function bls_login_url() {
     $login_link = get_option('lbls_link');
