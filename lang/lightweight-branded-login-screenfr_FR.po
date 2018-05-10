@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Branded Login Screen\n"
-"POT-Creation-Date: 2018-04-05 11:39+0200\n"
-"PO-Revision-Date: 2018-04-05 11:39+0200\n"
+"POT-Creation-Date: 2018-05-10 05:30+0200\n"
+"PO-Revision-Date: 2018-05-10 05:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: Julien Gasbayet\n"
 "Language: fr_FR\n"
@@ -13,41 +13,51 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: __\n"
-"X-Poedit-SearchPath-0: branded-login-screen.php\n"
-"X-Poedit-SearchPath-1: inc/customizer.php\n"
+"X-Poedit-SearchPath-0: inc/customizer.php\n"
+"X-Poedit-SearchPath-1: lightweight-branded-login-screen.php\n"
 
 #: inc/customizer.php:8
 msgid "Branded Login Screen"
-msgstr ""
+msgstr "Écran de connexion personnalisé"
 
 #: inc/customizer.php:9
 msgid "Define the images used for the login screen"
 msgstr "Définir les images utilisées pour l'écran d'accueil"
 
-#: inc/customizer.php:16
+#: inc/customizer.php:15
 msgid "Texts"
 msgstr "Textes"
 
-#: inc/customizer.php:32
+#: inc/customizer.php:31
 msgid "Title Text"
 msgstr "Texte"
 
-#: inc/customizer.php:50
+#: inc/customizer.php:49
 msgid "Link"
 msgstr "Lien"
 
-#: inc/customizer.php:62
+#: inc/customizer.php:60
 msgid "Images"
 msgstr "Images"
 
-#: inc/customizer.php:81
-msgid "Lighweight Branded Login Screen Logo"
-msgstr "Logo Lighweight Branded Login Screen"
+#: inc/customizer.php:79
+msgid "Login Screen Logo"
+msgstr "Logo de l'écran de connexion"
 
-#: inc/customizer.php:82
+#: inc/customizer.php:80
 msgid "Recommended dimensions: 175px X 200px"
 msgstr "Dimensions recommandées : 175px X 200px"
 
 #: inc/customizer.php:100
-msgid "Lighweight Branded Login Screen Background"
-msgstr "Background Lighweight Branded Login Screen"
+msgid "Background Image"
+msgstr "Image d'arrière-plan"
+
+#: inc/customizer.php:120
+msgid "Background opacity"
+msgstr "Opacité arrière-plan"
+
+#~ msgid "Lighweight Branded Login Screen Logo"
+#~ msgstr "Logo Lighweight Branded Login Screen"
+
+#~ msgid "Lighweight Branded Login Screen Background"
+#~ msgstr "Background Lighweight Branded Login Screen"
