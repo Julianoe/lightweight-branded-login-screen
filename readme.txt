@@ -13,7 +13,7 @@ This plugin is made for people looking for a very light and simple solution as a
 
 == Changelog ==
 - 1.1 - 2019/06/26
-Updated filter from deprecated login_headertext to login_headertitle
+Updated filter from deprecated login_headertitle to login_headertext
 
 
 == Credits ==

@@ -64,7 +64,7 @@ if( get_option('lbls_title') ){
     $login_text = get_option('lbls_title');
     return $login_text;
   }
-  add_filter('login_headertitle', 'bls_login_text');
+  add_filter('login_headertext', 'bls_login_text');
 }
 
 /**
