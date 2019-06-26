@@ -1,7 +1,7 @@
 === Lightweight Branded Login Screen ===
 Contributors: julianoe
 Stable tag: 1.1
-Tested up to: 4.9
+Tested up to: 5.2
 
 This plugin will allow you to very easily customize the login screen via the Wordpress Customizer to match your brand, site or mood.
 
