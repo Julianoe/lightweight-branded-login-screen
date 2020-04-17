@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Branded Login Screen\n"
-"POT-Creation-Date: 2018-05-10 05:30+0200\n"
-"PO-Revision-Date: 2018-05-10 05:30+0200\n"
+"POT-Creation-Date: 2020-04-17 04:28+0200\n"
+"PO-Revision-Date: 2020-04-17 04:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: Julien Gasbayet\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: __\n"
@@ -21,40 +21,62 @@ msgid "Branded Login Screen"
 msgstr "Écran de connexion personnalisé"
 
 #: inc/customizer.php:9
-msgid "Define the images used for the login screen"
-msgstr "Définir les images utilisées pour l'écran d'accueil"
+msgid ""
+"Define the images used for the login screen. Simple and lightweight "
+"customisation."
+msgstr ""
+"Définir les images utilisées pour l'écran d'accueil. Customisation simple et "
+"légère."
 
 #: inc/customizer.php:15
-msgid "Texts"
-msgstr "Textes"
+msgid "Logo"
+msgstr "Logo"
 
-#: inc/customizer.php:31
-msgid "Title Text"
-msgstr "Texte"
-
-#: inc/customizer.php:49
-msgid "Link"
-msgstr "Lien"
-
-#: inc/customizer.php:60
-msgid "Images"
-msgstr "Images"
-
-#: inc/customizer.php:79
+#: inc/customizer.php:34
 msgid "Login Screen Logo"
 msgstr "Logo de l'écran de connexion"
 
-#: inc/customizer.php:80
+#: inc/customizer.php:35
 msgid "Recommended dimensions: 175px X 200px"
 msgstr "Dimensions recommandées : 175px X 200px"
 
-#: inc/customizer.php:100
+#: inc/customizer.php:52
+msgid "Title Text"
+msgstr "Texte"
+
+#: inc/customizer.php:53
+msgid "Text that is displayed when the logo is not."
+msgstr "Texte affiché quand le logo est absent."
+
+#: inc/customizer.php:71
+msgid "Link"
+msgstr "Lien"
+
+#: inc/customizer.php:72
+msgid ""
+"Input the link the user will be directed to upon clicking the logo on the wp-"
+"login page."
+msgstr ""
+"Le lien vers lequel l'utilisateur est redirigé quand il clique sur le logo "
+"de la page wp-login."
+
+#: inc/customizer.php:84
+msgid "Background"
+msgstr "Image d'arrière-plan"
+
+#: inc/customizer.php:104
 msgid "Background Image"
 msgstr "Image d'arrière-plan"
 
-#: inc/customizer.php:120
+#: inc/customizer.php:124
 msgid "Background opacity"
 msgstr "Opacité arrière-plan"
+
+#~ msgid "Texts"
+#~ msgstr "Textes"
+
+#~ msgid "Images"
+#~ msgstr "Images"
 
 #~ msgid "Lighweight Branded Login Screen Logo"
 #~ msgstr "Logo Lighweight Branded Login Screen"
