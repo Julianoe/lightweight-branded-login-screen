@@ -6,15 +6,36 @@ function lbls_register_customizer( $wp_customize ) {
 		'priority'       => 500,
 		'theme_supports' => '',
 		'title'          => __( 'Branded Login Screen', 'lightweight-branded-login-screen' ),
-		'description'    => __( 'Define the images used for the login screen', 'lightweight-branded-login-screen' ),
+		'description'    => __( 'Define the images used for the login screen. Simple and lightweight customisation.', 'lightweight-branded-login-screen' ),
 	) );
 
-	// Texts SECTION
+	// Logo SECTION
 	$wp_customize->add_section(
-		'lbls_texts', array(
-			'title'    => __('Texts','lightweight-branded-login-screen'),
+		'lbls_logo_section', array(
+			'title'    => __('Logo','lightweight-branded-login-screen'),
 			'panel'    => 'lightweight-branded-login',
 			'priority' => 10
+		)
+	);
+	// Add logo image setting
+	$wp_customize->add_setting(
+		'lbls_logo', array(
+			'type' 				 => 'option', // or option for non theme linked
+			'default'      => '',
+			// 'transport'    => 'postMessage'
+		)
+	);
+	// Add logo image control
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+		$wp_customize,
+			'lbls_logo_control',
+			array(
+					'label'    => __('Login Screen Logo', 'lightweight-branded-login-screen'),
+					'description' => __('Recommended dimensions: 175px X 200px', 'lightweight-branded-login-screen'),
+					'settings' => 'lbls_logo',
+					'section'  => 'lbls_logo_section'
+			)
 		)
 	);
 	// Add title setting
@@ -29,7 +50,8 @@ function lbls_register_customizer( $wp_customize ) {
 			'lbls_title_control',
 			array(
 					'label'    => __( 'Title Text', 'lightweight-branded-login-screen' ),
-					'section'  => 'lbls_texts',
+					'description' => __('Text that is displayed when the logo is not.', 'lightweight-branded-login-screen'),
+					'section'  => 'lbls_logo_section',
 					'settings' => 'lbls_title',
 					'type'     => 'text'
 			)
@@ -47,42 +69,24 @@ function lbls_register_customizer( $wp_customize ) {
 			'lbls_link_control',
 			array(
 					'label'    => __( 'Link', 'lightweight-branded-login-screen' ),
-					'section'  => 'lbls_texts',
+					'description' => __('Input the link the user will be directed to upon clicking the logo on the wp-login page.', 'lightweight-branded-login-screen'),
+					'section'  => 'lbls_logo_section',
 					'settings' => 'lbls_link',
 					'type'     => 'text'
 			)
 		)
 	);
 
-	// Images SECTION
+
+	// Background SECTION
 	$wp_customize->add_section(
-		'lbls_images', array(
-			'title'     => __('Images', 'lightweight-branded-login-screen'),
+		'lbls_background_section', array(
+			'title'     => __('Background', 'lightweight-branded-login-screen'),
 			'panel'		=> 'lightweight-branded-login',
 			'priority'  => 201
 		)
 	);
-	// Add logo image setting
-	$wp_customize->add_setting(
-		'lbls_logo', array(
-			'type' 				 => 'option', // or option for non theme linked
-			'default'      => '',
-			// 'transport'    => 'postMessage'
-		)
-	);
-	// Add logo image control
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control(
-	    $wp_customize,
-			'lbls_logo_control',
-			array(
-					'label'    => __('Login Screen Logo', 'lightweight-branded-login-screen'),
-					'description' => __('Recommended dimensions: 175px X 200px', 'lightweight-branded-login-screen'),
-					'settings' => 'lbls_logo',
-					'section'  => 'lbls_images'
-			)
-		)
-	);
+	
 	// Add background image setting
 	$wp_customize->add_setting(
 		'lbls_background', array(
@@ -99,7 +103,7 @@ function lbls_register_customizer( $wp_customize ) {
 			array(
 					'label'    => __('Background Image', 'lightweight-branded-login-screen'),
 					'settings' => 'lbls_background',
-					'section'  => 'lbls_images'
+					'section'  => 'lbls_background_section'
 			)
 		)
 	);
@@ -119,7 +123,7 @@ function lbls_register_customizer( $wp_customize ) {
 			array(
 					'label'    => __('Background opacity', 'lightweight-branded-login-screen'),
 					'settings' => 'lbls_background_opacity',
-					'section'  => 'lbls_images',
+					'section'  => 'lbls_background_section',
 					'type'		 => 'number',
 					'input_attrs' => array( 'min' => 0, 'max' => 1, 'step'  => .1 )
 			)
