@@ -15,6 +15,8 @@ This plugin is made for people looking for a very light and simple solution as a
 - 1.2 - 2020/04/17
 Fixed header issue
 Fixed i18n problems (renamed badly named .po and .mo files and updated the text domain)
+Reorganized the panels into Logo / Background panels
+Updated translations
 
 - 1.1 - 2019/06/26
 Updated filter from deprecated login_headertitle to login_headertext
