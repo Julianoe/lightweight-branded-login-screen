@@ -19,7 +19,7 @@ require_once LBLS_PLUGIN_DIR . 'inc/customizer.php';
 /**
  * Adding a branded login screen
  */
-function bls_login_branding_theme() { ?>
+function lbls_login_branding_theme() { ?>
     <style type="text/css">
       <?php if ( get_option('lbls_logo') ) : ?>
         #login{
@@ -62,20 +62,20 @@ add_action( 'login_enqueue_scripts', 'bls_login_branding_theme' );
  * If title text is set replace the default one
  */
 if( get_option('lbls_title') ){
-  function bls_login_text() {
+  function lbls_login_text() {
     $login_text = get_option('lbls_title');
     return $login_text;
   }
-  add_filter('login_headertext', 'bls_login_text');
+  add_filter('login_headertext', 'lbls_login_text');
 }
 
 /**
  * If a link is set replace the default Wordpress one
  */
 if( get_option('lbls_link') ){
-  function bls_login_url() {
+  function lbls_login_url() {
     $login_link = get_option('lbls_link');
     return $login_link;
   }
-  add_filter('login_headerurl', 'bls_login_url');
+  add_filter('login_headerurl', 'lbls_login_url');
 }
