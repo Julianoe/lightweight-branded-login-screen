@@ -56,7 +56,7 @@ function lbls_login_branding_theme() { ?>
 
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'bls_login_branding_theme' );
+add_action( 'login_enqueue_scripts', 'lbls_login_branding_theme' );
 
 /**
  * If title text is set replace the default one
