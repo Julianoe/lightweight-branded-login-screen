@@ -1,7 +1,7 @@
 === Lightweight Branded Login Screen ===
 Contributors: julianoe
-Stable tag: 1.1
-Tested up to: 5.2
+Stable tag: 1.2
+Tested up to: 5.4
 
 This plugin will allow you to very easily customize the login screen via the Wordpress Customizer to match your brand, site or mood.
 
@@ -12,6 +12,10 @@ This plugin is made for people looking for a very light and simple solution as a
 
 
 == Changelog ==
+- 1.2 - 2020/04/17
+Fixed header issue
+Fixed i18n problems (renamed badly named .po and .mo files and updated the text domain)
+
 - 1.1 - 2019/06/26
 Updated filter from deprecated login_headertitle to login_headertext
 
