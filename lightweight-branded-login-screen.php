@@ -9,7 +9,7 @@ Author URI: http://julien.gasbayet.fr
 License: GPLv2
 */
 
-load_plugin_textdomain( 'lightweight_branded_login', false, basename( dirname( __FILE__ ) ) . '/lang' );
+load_plugin_textdomain( 'lightweight-branded-login-screen', false, basename( dirname( __FILE__ ) ) . '/lang' );
 define('LBLS_PLUGIN_DIR', plugin_dir_path(__FILE__));
 require_once LBLS_PLUGIN_DIR . 'inc/customizer.php';
 

@@ -5,14 +5,14 @@ function lbls_register_customizer( $wp_customize ) {
 	$wp_customize->add_panel( 'lightweight-branded-login', array(
 		'priority'       => 500,
 		'theme_supports' => '',
-		'title'          => __( 'Branded Login Screen', 'lightweight_branded_login' ),
-		'description'    => __( 'Define the images used for the login screen', 'lightweight_branded_login' ),
+		'title'          => __( 'Branded Login Screen', 'lightweight-branded-login-screen' ),
+		'description'    => __( 'Define the images used for the login screen', 'lightweight-branded-login-screen' ),
 	) );
 
 	// Texts SECTION
 	$wp_customize->add_section(
 		'lbls_texts', array(
-			'title'    => __('Texts','lightweight_branded_login'),
+			'title'    => __('Texts','lightweight-branded-login-screen'),
 			'panel'    => 'lightweight-branded-login',
 			'priority' => 10
 		)
@@ -28,7 +28,7 @@ function lbls_register_customizer( $wp_customize ) {
 			$wp_customize,
 			'lbls_title_control',
 			array(
-					'label'    => __( 'Title Text', 'lightweight_branded_login' ),
+					'label'    => __( 'Title Text', 'lightweight-branded-login-screen' ),
 					'section'  => 'lbls_texts',
 					'settings' => 'lbls_title',
 					'type'     => 'text'
@@ -46,7 +46,7 @@ function lbls_register_customizer( $wp_customize ) {
 			$wp_customize,
 			'lbls_link_control',
 			array(
-					'label'    => __( 'Link', 'lightweight_branded_login' ),
+					'label'    => __( 'Link', 'lightweight-branded-login-screen' ),
 					'section'  => 'lbls_texts',
 					'settings' => 'lbls_link',
 					'type'     => 'text'
@@ -57,7 +57,7 @@ function lbls_register_customizer( $wp_customize ) {
 	// Images SECTION
 	$wp_customize->add_section(
 		'lbls_images', array(
-			'title'     => __('Images', 'lightweight_branded_login'),
+			'title'     => __('Images', 'lightweight-branded-login-screen'),
 			'panel'		=> 'lightweight-branded-login',
 			'priority'  => 201
 		)
@@ -76,8 +76,8 @@ function lbls_register_customizer( $wp_customize ) {
 	    $wp_customize,
 			'lbls_logo_control',
 			array(
-					'label'    => __('Login Screen Logo', 'lightweight_branded_login'),
-					'description' => __('Recommended dimensions: 175px X 200px', 'lightweight_branded_login'),
+					'label'    => __('Login Screen Logo', 'lightweight-branded-login-screen'),
+					'description' => __('Recommended dimensions: 175px X 200px', 'lightweight-branded-login-screen'),
 					'settings' => 'lbls_logo',
 					'section'  => 'lbls_images'
 			)
@@ -97,7 +97,7 @@ function lbls_register_customizer( $wp_customize ) {
 			$wp_customize,
 			'lbls_background_control',
 			array(
-					'label'    => __('Background Image', 'lightweight_branded_login'),
+					'label'    => __('Background Image', 'lightweight-branded-login-screen'),
 					'settings' => 'lbls_background',
 					'section'  => 'lbls_images'
 			)
@@ -117,7 +117,7 @@ function lbls_register_customizer( $wp_customize ) {
 			$wp_customize,
 			'lbls_background_opacity_control',
 			array(
-					'label'    => __('Background opacity', 'lightweight_branded_login'),
+					'label'    => __('Background opacity', 'lightweight-branded-login-screen'),
 					'settings' => 'lbls_background_opacity',
 					'section'  => 'lbls_images',
 					'type'		 => 'number',
