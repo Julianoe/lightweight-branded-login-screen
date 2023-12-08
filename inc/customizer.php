@@ -107,6 +107,27 @@ function lbls_register_customizer( $wp_customize ) {
 			)
 		)
 	);
+	// Add background color
+	$wp_customize->add_setting(
+		'lbls_background_color', array(
+			'type' 				 => 'option', // or option for non theme linked
+			'default'      => '',
+			// 'transport'    => 'postMessage'
+		)
+	);
+	// Add background color
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'lbls_background_color_control',
+			array(
+					'label'    => __('Colored background layer color', 'lightweight-branded-login-screen'),
+					'description' => __('A color to apply over the background wether it has an image or not. Defaults to black.', 'lightweight-branded-login-screen'),
+					'settings' => 'lbls_background_color',
+					'section'  => 'lbls_background_section'
+			)
+		)
+	);
 	// Add background color darkness setting
 	$wp_customize->add_setting(
 		'lbls_background_opacity', array(
@@ -121,7 +142,8 @@ function lbls_register_customizer( $wp_customize ) {
 			$wp_customize,
 			'lbls_background_opacity_control',
 			array(
-					'label'    => __('Background opacity', 'lightweight-branded-login-screen'),
+					'label'    => __('Colored background layer opacity', 'lightweight-branded-login-screen'),
+					'description' => __('Defaults to 0.5 when background color is defined.', 'lightweight-branded-login-screen'),
 					'settings' => 'lbls_background_opacity',
 					'section'  => 'lbls_background_section',
 					'type'		 => 'number',

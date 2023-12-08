@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightweight Branded Login Screen\n"
-"POT-Creation-Date: 2020-04-17 04:28+0200\n"
-"PO-Revision-Date: 2020-04-17 04:29+0200\n"
+"POT-Creation-Date: 2023-12-08 16:41+0100\n"
+"PO-Revision-Date: 2023-12-08 16:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: Julien Gasbayet\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: inc/customizer.php\n"
 "X-Poedit-SearchPath-1: lightweight-branded-login-screen.php\n"
@@ -69,8 +69,25 @@ msgid "Background Image"
 msgstr "Image d'arrière-plan"
 
 #: inc/customizer.php:124
-msgid "Background opacity"
-msgstr "Opacité arrière-plan"
+msgid "Colored background layer color"
+msgstr "Couleur d'arrière-plan"
+
+#: inc/customizer.php:125
+msgid ""
+"A color to apply over the background wether it has an image or not. Defaults "
+"to black."
+msgstr ""
+"Une color à appliquer sur l'arrière-plan, qu'il ait une image ou non. Noir "
+"par défaut."
+
+#: inc/customizer.php:145
+msgid "Colored background layer opacity"
+msgstr "Opacité de l'arrière-plan de couleur"
+
+#: inc/customizer.php:146
+msgid "Defaults to 0.5 when background color is defined."
+msgstr ""
+"La valeur par défaut est 0,5 lorsque la couleur d'arrière-plan est définie."
 
 #~ msgid "Texts"
 #~ msgstr "Textes"
